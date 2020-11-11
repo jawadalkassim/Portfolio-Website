@@ -7,12 +7,14 @@ require(`dotenv`).config({
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
+
   siteMetadata: {
     siteTitle: `Jawad Alkassim`,
     siteHeadline: `Jawad Alkassim - Web Developer Portfolio`,
     siteDescription: `Hi, I'm Jawad Alkassim, a freelance web Developer `,
     siteLanguage: `en`,
     siteImage: `/website-image.jpg`,
+    image:'/website-image.jpg',
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
