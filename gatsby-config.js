@@ -15,6 +15,8 @@ module.exports = {
     siteLanguage: `en`,
     siteImage: `/website-image.png`,
     image:'/website-image.png',
+    siteUrl: `https://jawadalkassim.netlify.app/`,
+    author: `@jawadAlkassim`,
     // You can overwrite values here that are used for the SEO component
     // Of course you can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
