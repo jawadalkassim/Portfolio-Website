@@ -1,4 +1,3 @@
-// import favicon16 from "./static/fav.png";
 
 require(`dotenv`).config({
   path: `.env`,
@@ -17,10 +16,9 @@ module.exports = {
     image:'/website-image.png',
     siteUrl: `https://jawadalkassim.netlify.app/`,
     author: `@jawadAlkassim`,
-    // You can overwrite values here that are used for the SEO component
-    // Of course you can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
     siteTitleAlt: `Jawad Alkassim Portfolio`,
+
+    // See all options: https://github.com/LekoArts/gatsby-themes/blob/master/themes/gatsby-theme-cara/gatsby-config.js
   },
   plugins: [
     {
@@ -32,26 +30,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+        name: `Jawad Alkassim`,
+        short_name: `Jawad`,
+        description: `Portfolio`,
         start_url: `/`,
         background_color: `#141821`,
         theme_color: `#f6ad55`,
         display: `standalone`,
-        icons: [
-          {
-            src: `/favicon-32x32.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
-            src: `/favicon-16x16.png`,
-            sizes: `512x512`,
-            type: `image/png`,
-          },
-          
-        ],
+        icon:'./static/favicon-32x32.png',
         
       },
       
