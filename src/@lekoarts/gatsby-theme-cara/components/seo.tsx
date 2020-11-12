@@ -4,7 +4,7 @@ import { withPrefix } from "gatsby"
 import useSiteMetadata from "../hooks/use-site-metadata"
 // import {ogImage} from "../images/og-image.png"
 
-const ogImage = require("../images/og-image.png") as string;
+const ogImage = require("../images/og-image.png");
 
 type Props = {
   title?: string
@@ -23,7 +23,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
     siteUrl,
     siteDescription: defaultDescription,
     siteLanguage,
-    siteImage: defaultImage,
+    siteImage,
     author,
   } = site
 
@@ -31,7 +31,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    image: `${siteUrl}${ogImage || defaultImage}`,
+    image: `${siteUrl}${ogImage}`,
   }
   return (
     <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
