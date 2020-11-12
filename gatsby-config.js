@@ -12,7 +12,7 @@ module.exports = {
     siteHeadline: `Jawad Alkassim - Web Developer Portfolio`,
     siteDescription: `Hi, I'm Jawad Alkassim, a freelance web Developer `,
     siteLanguage: `en`,
-    siteImage: `/website-image.png`,
+    // siteImage: `/website-image.png`,
     siteUrl: `https://jawadalkassim.netlify.app/`,
     author: `@jawadAlkassim`,
     siteTitleAlt: `Jawad Alkassim Portfolio`,
