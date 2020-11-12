@@ -2,7 +2,9 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { withPrefix } from "gatsby"
 import useSiteMetadata from "../hooks/use-site-metadata"
-import ogImage from "../../../../static/website-image.png"
+// import {ogImage} from "../images/og-image.png"
+
+const ogImage = require("../images/og-image.png") as string;
 
 type Props = {
   title?: string
