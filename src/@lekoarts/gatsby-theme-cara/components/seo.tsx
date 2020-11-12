@@ -29,7 +29,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
     title: title || defaultTitle,
     description: description || defaultDescription,
     url: `${siteUrl}${pathname || ``}`,
-    image: `${siteUrl}${image || defaultImage}`,
+    image: `${siteUrl}${ogImage || defaultImage}`,
   }
   return (
     <Helmet title={title} defaultTitle={defaultTitle} titleTemplate={`%s | ${siteTitle}`}>
@@ -39,7 +39,7 @@ const SEO = ({ title = ``, description = ``, pathname = ``, image = ``, children
       <meta property="og:title" content={seo.title} />
       <meta property="og:url" content={seo.url} />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content='https://jawadalkassim.netlify.app/${ogImage}' />
+      <meta property="og:image" content={seo.image} />
       <meta property="og:type" content="website" />
       <meta property="og:image:alt" content={seo.description} />
       <meta name="twitter:card" content="summary_large_image" />
